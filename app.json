@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "wallpaper-io",
+    "slug": "wallpaperio-alpine8-labs",
+    "version": "1.0.0",
+    "extra": {
+      "pro": "false"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "dummy-googleMobileAdsAppId-ios"
+      },
+      "bundleIdentifier": "prd.alpine8.wallpaperio",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "config": {
+        "googleMobileAdsAppId": "dummy-googleMobileAdsAppId-android"
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon-foreground.png",
+        "backgroundImage": "./assets/adaptive-icon-background.png"
+      },
+      "package": "prd.alpine8.wallpaperio",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allows wallpaper.io to access your photos.",
+          "savePhotosPermission": "Allows wallpaper.io to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-ads-admob",
+        {
+          "userTrackingPermission": "Please help support the developer by enabling personalized ads."
+        }
+      ]
+    ]
+  }
+}
